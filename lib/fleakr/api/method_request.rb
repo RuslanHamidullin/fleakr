@@ -48,7 +48,7 @@ module Fleakr
       end
 
       def endpoint_url
-        'http://api.flickr.com/services/rest/'
+        'http://innertree-flickr-altlabs.apigee.com/services/rest/'
       end
 
       def send # :nodoc:

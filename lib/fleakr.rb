@@ -1,7 +1,5 @@
 $:.unshift(File.dirname(__FILE__))
 
-gem 'activesupport', '~> 2.3.0'
-
 require 'uri'
 require 'cgi'
 require 'net/http'

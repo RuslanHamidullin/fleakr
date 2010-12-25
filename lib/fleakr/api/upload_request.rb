@@ -9,8 +9,8 @@ module Fleakr
     class UploadRequest
 
       ENDPOINT_URIS = {
-        :create => 'http://api.flickr.com/services/upload/',
-        :update => 'http://api.flickr.com/services/replace/'
+        :create => 'http://innertree-flickr-altlabs.apigee.com/services/upload/',
+        :update => 'http://innertree-flickr-altlabs.apigee.com/services/replace/'
       }
 
       attr_reader :parameters, :type

@@ -7,7 +7,7 @@ module Fleakr::Api
 
       should "know the endpoint URL" do
         request = MethodRequest.new('people.findByUsername')
-        request.endpoint_url.should == 'http://api.flickr.com/services/rest/'
+        request.endpoint_url.should == 'http://innertree-flickr-altlabs.apigee.com/services/rest/'
       end
 
       should "add the method name to the list of parameters" do
