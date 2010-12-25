@@ -16,9 +16,18 @@ begin
 rescue NameError
   # ActiveSupport >= 2.3.5 will raise a NameError exception
   require 'active_support/core_ext/object/blank'
+rescue LoadError
+  # ActiveSupport >= 3.0.3 will raise a LoadError exception
+  require 'active_support/core_ext/object/blank'
 end
 
-require 'active_support/core_ext/time'
+begin
+  require 'active_support/core_ext/time'
+rescue LoadError
+  # ActiveSupport >= 3.0.3 will raise a LoadError exception
+  require 'active_support/core_ext/object/time'
+end
+
 require 'active_support/inflector'
 require 'active_support/core_ext/string'
 
