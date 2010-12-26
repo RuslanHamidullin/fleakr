@@ -25,7 +25,13 @@ begin
   require 'active_support/core_ext/time'
 rescue LoadError
   # ActiveSupport >= 3.0.3 will raise a LoadError exception
-  require 'active_support/core_ext/object/time'
+  require 'active_support/core_ext/time/acts_like'
+  require 'active_support/core_ext/time/calculations'
+  require 'active_support/core_ext/time/conversions'
+  require 'active_support/core_ext/time/marshal'
+  require 'active_support/core_ext/time/publicize_conversion_methods'
+  require 'active_support/core_ext/time/zones'
+  require 'active_support/lazy_load_hooks'
 end
 
 require 'active_support/inflector'
