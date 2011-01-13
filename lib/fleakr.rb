@@ -10,16 +10,16 @@ require 'forwardable'
 require 'active_support/core_ext/array'
 require 'active_support/core_ext/module'
 
-begin
+#begin
   # ActiveSupport < 2.3.5
-  require 'active_support/core_ext/blank'
-rescue NameError
+ # require 'active_support/core_ext/blank'
+#rescue NameError
   # ActiveSupport >= 2.3.5 will raise a NameError exception
-  require 'active_support/core_ext/object/blank'
-rescue LoadError
+ # require 'active_support/core_ext/object/blank'
+#rescue LoadError
   # ActiveSupport >= 3.0.3 will raise a LoadError exception
-  require 'active_support/core_ext/object/blank'
-end
+ # require 'active_support/core_ext/object/blank'
+#end
 
 begin
   require 'active_support/core_ext/time'
